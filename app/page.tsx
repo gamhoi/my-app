@@ -12,7 +12,7 @@ const Page = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <img
-                src={withBasePath("/file.svg")}
+                src={withBasePath("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/7ebf7aed7a3cebffbb9d4a9099c53716-7zadv4Qe2hy3BCJTDBqvoocjWhM83t.png")}
                 alt="Canadian Crystal View Logo"
                 className="w-10 h-10"
               />
