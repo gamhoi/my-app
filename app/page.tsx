@@ -187,7 +187,7 @@ const Page = () => {
                 expertise: "Business Operations & Glass Industry",
                 background: "Family glass retail chain in China, extensive business management experience",
                 slug: "meili-tang",
-                photo: withBasePath("/team/meili-tang-photo.png"),
+                photo: withBasePath("/meili-tang-photo.jpg"),
               },
               {
                 name: "Xueyin Ma",
@@ -195,7 +195,7 @@ const Page = () => {
                 expertise: "Marketing & International Trade",
                 background: "Former marketing manager in multinational industrial products enterprise",
                 slug: "xueyin-ma",
-                photo: withBasePath("/team/xueyin-ma-photo.png"),
+                photo: withBasePath("/xueyin-ma-photo.jpg"),
               },
               {
                 name: "Vissutar Phatarasiri",
@@ -203,7 +203,7 @@ const Page = () => {
                 expertise: "Financial Management & Compliance",
                 background: "Private company founder with expertise in budgeting and tax compliance",
                 slug: "vissutar-phatarasiri",
-                photo: withBasePath("/team/vissutar-phatarasiri-photo.png"),
+                photo: withBasePath("/vissutar-phatarasiri-photo.jpg"),
               },
               {
                 name: "Andrea Citlalli Martinez Salazar",
@@ -211,7 +211,7 @@ const Page = () => {
                 expertise: "Supply Chain & Operations",
                 background: "Building materials industry expert with corporate management experience",
                 slug: "andrea-martinez-salazar",
-                photo: withBasePath("/team/andrea-martinez-salazar-photo.png"),
+                photo: withBasePath("/andrea-martinez-salazar-photo.jpg"),
               },
             ].map((member) => (
               <Link key={member.name} href={`/team/${member.slug}`}>
@@ -221,7 +221,7 @@ const Page = () => {
                       <img
                         src={member.photo as string}
                         alt={`${member.name} - ${member.role}`}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover object-top"
                       />
                     </div>
                     <CardTitle className="font-heading text-lg group-hover:text-violet-600 transition-colors">

@@ -59,9 +59,9 @@ export default function VissutarPhatarasiriPage() {
                   {/* Replaced placeholder with professional photo */}
                   <div className="w-48 h-48 rounded-full mx-auto mb-6 overflow-hidden shadow-lg">
                     <img
-                      src={withBasePath("/team/vissutar-phatarasiri-photo.png")}
+                      src={withBasePath("/vissutar-phatarasiri-photo.jpg")}
                       alt="Vissutar Phatarasiri - Chief Financial Officer"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-top"
                     />
                   </div>
                   <CardTitle className="font-heading text-2xl">Vissutar Phatarasiri</CardTitle>

@@ -59,9 +59,9 @@ export default function XueyinMaPage() {
                   {/* Replaced placeholder with professional photo */}
                   <div className="w-48 h-48 rounded-full mx-auto mb-6 overflow-hidden shadow-lg">
                     <img
-                      src={withBasePath("/team/xueyin-ma-photo.png")}
+                      src={withBasePath("/xueyin-ma-photo.jpg")}
                       alt="Xueyin Ma - Chief Marketing Officer"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-top"
                     />
                   </div>
                   <CardTitle className="font-heading text-2xl">Xueyin Ma</CardTitle>
