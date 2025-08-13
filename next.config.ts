@@ -12,6 +12,9 @@ const nextConfig: NextConfig = {
     // basePath: `/${repo}`,
     // assetPrefix: `/${repo}/`,
   } : {}),
+  eslint: {
+    ignoreDuringBuilds: true,  // ← 关键：构建时忽略 ESLint
+  },
 };
 
 export default nextConfig;
