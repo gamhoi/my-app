@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { ArrowLeft, Mail, Linkedin, Megaphone, Globe } from "lucide-react"
 import Link from "next/link"
+import { withBasePath } from "@/lib/utils"
 
 export default function XueyinMaPage() {
   return (
@@ -12,7 +13,7 @@ export default function XueyinMaPage() {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-3">
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/7ebf7aed7a3cebffbb9d4a9099c53716-7zadv4Qe2hy3BCJTDBqvoocjWhM83t.png"
+              src={withBasePath("/file.svg")}
               alt="Canadian Crystal View Logo"
               className="w-10 h-10"
             />
@@ -58,7 +59,7 @@ export default function XueyinMaPage() {
                   {/* Replaced placeholder with professional photo */}
                   <div className="w-48 h-48 rounded-full mx-auto mb-6 overflow-hidden shadow-lg">
                     <img
-                      src="/team/xueyin-ma-photo.png"
+                      src={withBasePath("/team/xueyin-ma-photo.png")}
                       alt="Xueyin Ma - Chief Marketing Officer"
                       className="w-full h-full object-cover"
                     />

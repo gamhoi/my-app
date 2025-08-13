@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { withBasePath } from "@/lib/utils"
 
 const Page = () => {
   return (
@@ -11,7 +12,7 @@ const Page = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/7ebf7aed7a3cebffbb9d4a9099c53716-7zadv4Qe2hy3BCJTDBqvoocjWhM83t.png"
+                src={withBasePath("/file.svg")}
                 alt="Canadian Crystal View Logo"
                 className="w-10 h-10"
               />
@@ -78,32 +79,32 @@ const Page = () => {
                 title: "Tempered Glass",
                 description:
                   "High-strength safety glass that shatters into small granular pieces, ideal for windows, doors, and building facades.",
-                image: "/tempered-glass-architecture.png",
+                image: withBasePath("/tempered-glass-architecture.png"),
               },
               {
                 title: "Laminated Glass",
                 description:
                   "Enhanced safety glass that holds together upon impact, widely used in skylights, railings, and security applications.",
-                image: "/laminated-glass-security.png",
+                image: withBasePath("/laminated-glass-security.png"),
               },
               {
                 title: "Insulated Glass Units",
                 description:
                   "Multi-pane glass with air or gas-filled spaces for superior thermal insulation and sound reduction.",
-                image: "/placeholder.png",
+                image: withBasePath("/placeholder.png"),
               },
               {
                 title: "Low-E Glass",
                 description:
                   "Coated glass that minimizes infrared and UV light penetration while maximizing visible light for energy efficiency.",
-                image: "/low-e-glass-coating.png",
+                image: withBasePath("/low-e-glass-coating.png"),
               },
             ].map((product, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="w-full h-48 rounded-lg overflow-hidden mb-4">
                     <img
-                      src={product.image || "/placeholder.svg"}
+                      src={product.image as string}
                       alt={product.title}
                       className="w-full h-full object-cover"
                     />
@@ -186,7 +187,7 @@ const Page = () => {
                 expertise: "Business Operations & Glass Industry",
                 background: "Family glass retail chain in China, extensive business management experience",
                 slug: "meili-tang",
-                photo: "/team/meili-tang-photo.png",
+                photo: withBasePath("/team/meili-tang-photo.png"),
               },
               {
                 name: "Xueyin Ma",
@@ -194,7 +195,7 @@ const Page = () => {
                 expertise: "Marketing & International Trade",
                 background: "Former marketing manager in multinational industrial products enterprise",
                 slug: "xueyin-ma",
-                photo: "/team/xueyin-ma-photo.png",
+                photo: withBasePath("/team/xueyin-ma-photo.png"),
               },
               {
                 name: "Vissutar Phatarasiri",
@@ -202,7 +203,7 @@ const Page = () => {
                 expertise: "Financial Management & Compliance",
                 background: "Private company founder with expertise in budgeting and tax compliance",
                 slug: "vissutar-phatarasiri",
-                photo: "/team/vissutar-phatarasiri-photo.png",
+                photo: withBasePath("/team/vissutar-phatarasiri-photo.png"),
               },
               {
                 name: "Andrea Citlalli Martinez Salazar",
@@ -210,7 +211,7 @@ const Page = () => {
                 expertise: "Supply Chain & Operations",
                 background: "Building materials industry expert with corporate management experience",
                 slug: "andrea-martinez-salazar",
-                photo: "/team/andrea-martinez-salazar-photo.png",
+                photo: withBasePath("/team/andrea-martinez-salazar-photo.png"),
               },
             ].map((member) => (
               <Link key={member.name} href={`/team/${member.slug}`}>
@@ -218,7 +219,7 @@ const Page = () => {
                   <CardHeader>
                     <div className="w-20 h-20 rounded-full mx-auto mb-4 overflow-hidden group-hover:shadow-md transition-shadow">
                       <img
-                        src={member.photo || "/placeholder.svg"}
+                        src={member.photo as string}
                         alt={`${member.name} - ${member.role}`}
                         className="w-full h-full object-cover"
                       />
@@ -247,7 +248,7 @@ const Page = () => {
             <div>
               <div className="flex items-center space-x-3 mb-4">
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/7ebf7aed7a3cebffbb9d4a9099c53716-7zadv4Qe2hy3BCJTDBqvoocjWhM83t.png"
+                  src={withBasePath("/file.svg")}
                   alt="Canadian Crystal View Logo"
                   className="w-8 h-8"
                 />

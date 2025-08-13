@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
   output: 'export',              // 关键：静态导出
   images: { unoptimized: true }, // GitHub Pages 无法用内置图片优化
   trailingSlash: true,           // 导出更友好（生成以 / 结尾的路径）
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? `/${repo}` : '',
+  },
   ...(isProd ? {                 // 仅生产环境使用子路径
     basePath: `/${repo}`,
     assetPrefix: `/${repo}/`,
